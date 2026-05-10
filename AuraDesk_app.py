@@ -186,7 +186,7 @@ Always reassure the customer their money is safe.""",
 
 def get_response(user_message, business_type):
     if not st.session_state.api_key:
-        return "⚠️ Please enter your Gemini API key in the sidebar first."
+        return "Please enter your Gemini API key in the sidebar first."
 
     try:
         os.environ["GOOGLE_API_KEY"] = st.session_state.api_key
@@ -212,11 +212,11 @@ Agent:"""
 
     except Exception as e:
         if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
-            return "⚠️ **Rate limit hit.** Please wait 1 minute and try again, or use a new API key from [aistudio.google.com](https://aistudio.google.com)"
+            return " **Rate limit hit.** Please wait 1 minute and try again, or use a new API key from [aistudio.google.com](https://aistudio.google.com)"
         elif "404" in str(e):
-            return "⚠️ **Model not found.** Please check your API key is valid."
+            return " **Model not found.** Please check your API key is valid."
         else:
-            return f"⚠️ **Error:** {str(e)}"
+            return f" **Error:** {str(e)}"
 
 # ── HEADER ────────────────────────────────────────────────────────────────────
 st.markdown("""
@@ -266,20 +266,20 @@ with st.sidebar:
 
     st.markdown("""<div class='ssection'>
         <strong style='color:#C9A84C;'>CAPABILITIES:</strong><br>
-        ◈ Multi-business support modes<br>
-        ◈ Conversation memory<br>
-        ◈ Hindi + English support<br>
-        ◈ Empathetic AI responses<br>
-        ◈ Escalation handling
+         Multi-business support modes<br>
+         Conversation memory<br>
+         Hindi + English support<br>
+         Empathetic AI responses<br>
+         Escalation handling
     </div>""", unsafe_allow_html=True)
 
     st.markdown("""<div class='ssection'>
         <strong style='color:#C9A84C;'>PM METRICS:</strong><br>
-        ◈ Ticket deflection rate<br>
-        ◈ Resolution rate<br>
-        ◈ CSAT score<br>
-        ◈ First response time<br>
-        ◈ Escalation rate
+         Ticket deflection rate<br>
+         Resolution rate<br>
+         CSAT score<br>
+         First response time<br>
+         Escalation rate
     </div>""", unsafe_allow_html=True)
 
     st.markdown("<div class='sfooter'>VIVEK BAKADE<br>AI PM PORTFOLIO · 2025</div>", unsafe_allow_html=True)
@@ -311,7 +311,7 @@ for msg in st.session_state.chat_history:
 
 user_input = st.text_input(
     "message",
-    placeholder=f"💬  Type your message here... (e.g. My order hasn't arrived yet)",
+    placeholder=f"  Type your message here... (e.g. My order hasn't arrived yet)",
     label_visibility="collapsed"
 )
 
