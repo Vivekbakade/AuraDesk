@@ -2,7 +2,7 @@ ResolveAI — Intelligent Customer Support Chatbot
 
 AI-powered customer support agent for Indian businesses · Powered by Google Gemini
 
-Built by Vivek Bakade · vivekbakade14@gmail.com · LinkedIn · GitHub
+Built by Vivek Bakade · vivekbakade14@gmail.com 
 
  Product Overview
 Problem: Indian SMEs spend ₹15,000–50,000/month on human customer support agents for repetitive queries. 60% of support tickets are the same 10 questions asked repeatedly.
