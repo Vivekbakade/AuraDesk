@@ -1,6 +1,8 @@
 AuraDesk — Intelligent Customer Support Chatbot
 AI-powered customer support agent for Indian businesses · Powered by Google Gemini
- PRD = https://drive.google.com/file/d/1nSFS4v8vplQWdsl9rK6-sSi-_PpP81K-/view?usp=drivesdk
+
+
+PRD = https://drive.google.com/file/d/1nSFS4v8vplQWdsl9rK6-sSi-_PpP81K-/view?usp=drivesdk
 
 --------------------------------------------------------------------------------
 Product Overview
